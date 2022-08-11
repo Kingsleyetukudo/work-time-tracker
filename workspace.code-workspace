@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\code along with brad\\API\\API with JSON"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "time-tracking-dashboard-main"
+	}
+}

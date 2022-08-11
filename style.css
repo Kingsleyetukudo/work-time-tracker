@@ -1,0 +1,272 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+
+body{
+  font-family: 'rubik';
+  font-weight: 100;
+}
+.container{
+  background-color: #0D1323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaebf7;
+  height: 100vh;
+}
+
+.center-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.container-inner{
+  display: grid;
+  margin: auto 0;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "box1 box2  box3  box4"
+  "box1 box5  box6  box7"
+}
+
+.box-1{
+  grid-area: box1;
+  background-color: #1D204B;
+  border-radius: 10px;
+ 
+}
+
+.box-2{
+  grid-area: box2;
+  background-color: #FF8B64;
+  background-image: url('images/icon-work.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding-top: 2rem;
+  border-radius: 10px;
+}
+
+.box-3{
+  grid-area: box3;
+  background-color: #56C2E6;
+  background-image: url('images/icon-play.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-top: 2rem;
+  border-radius: 10px;
+}
+
+.box-4{
+  grid-area: box4;
+  background-color: #FE5F7E;
+  background-image: url('images/icon-study.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-top: 2rem;
+  border-radius: 10px;
+}
+
+.box-5{
+  grid-area: box5;
+  background-color: #4CCF83;
+  background-image: url('images/icon-exercise.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  padding-top: 2rem;
+  border-radius: 10px;
+}
+
+.box-6{
+  grid-area: box6;
+  background-color: #7235D1;
+  background-image: url('images/icon-social.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding-top: 2rem;
+  border-radius: 10px;
+}
+
+.box-7{
+  grid-area: box7;
+  background-color: #F1C75A;
+  background-image: url('images/icon-self-care.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding-top: 2rem;
+  border-radius: 10px;
+}
+
+.profile-1{
+  background-color: #5746EA;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.top-con{
+  padding-bottom: 2rem;
+}
+
+.text-1{
+  padding: 1rem;
+  color:  #c5c6e0;
+  font-weight: 500;
+}
+
+.btn {
+  margin: 1rem 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.active, .btn:hover {
+  /* background-color: rgb(0, 9, 58); */
+  /* width: 50%; */
+  color: white;
+  font-weight: 700;
+  padding: 0.05rem 0;
+}
+
+.profile-1 img{
+  width: 70px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.profile-1 p{
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.profile-1 h2{
+  margin-top: 5px;
+  font-size: 40px;
+}
+
+.sub-div{
+  background-color: #1D204B;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+}
+
+.sub-div:hover{
+  background-color: #6f76c8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.top-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.sub-title{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.three-dots{
+  width:10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
+
+.three-dots span{
+  width: 0px;
+  padding: 2px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.footer p{
+  font-size: 14px;
+}
+
+@media (max-width:750px){
+
+  .container{
+    height: 100%;
+    padding: 2rem 0;
+  }
+  .container-inner{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: 
+  "box1"
+  "box2"
+  "box3"  
+  "box4"
+  "box5"  
+  "box6"
+  "box7"
+}
+
+.profile-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-1 img{
+  width: 80px;
+}
+
+
+.top-con{
+  padding-bottom: 0;
+}
+
+.profile-1 p{
+  margin: 5px;
+}
+
+.profile-1 h2{
+  font-size: 20px;
+  margin: 5px;
+  font-weight: 700;
+}
+
+.box {
+  width: 100%;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.sub-title{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sub-div{
+  padding: 1rem 1rem;
+ 
+}
+
+}
